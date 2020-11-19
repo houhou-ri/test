@@ -1,4 +1,4 @@
-
+/*使い方 <hl color=""> XXXXX </hl>
 new Vue({
     el: '#app',
     components: {
