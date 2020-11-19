@@ -1,4 +1,32 @@
-/* 画像上下半分 スライド Start*/
+/* 画像左から *******************************/
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-wrap:before {
+  animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1) forwards;
+  background: #fff;
+  bottom: 0;
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+@keyframes img-wrap {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* 画像右から ******************************************/
+上記 CSS の translateX(100%) を translateX(-100%) と値をマイナスにすると、右から表示するアニメーションに。
+
+/* 画像上下半分 スライド Start***************************/
 .img-wrap {
   overflow: hidden;
   position: relative;
