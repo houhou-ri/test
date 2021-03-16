@@ -22,7 +22,7 @@ function highlighter() {
         }
     };
     
-    // 3) Return a Vue component.
+    // 3) Return a Vue component test.
     return {
         template: 
             '<span v-bind:style="style">' +
